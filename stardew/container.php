@@ -41,15 +41,15 @@
           <a href="edit.php?id=<?php echo $row['product_id']; ?>">
             <button class="btn btn-info" type="button">edit</button>
           </a>
-          <a href="delete_product.php?id=<?php echo $row['product_id']; ?>.php">
+          <a href="delete_product.php?id=<?php echo $row['product_id']; ?>">
             <button class="btn btn-danger" type="button">delete</button>
           </a>
         <?php }elseif($_SESSION['sess_status']==1){ ?>
-          <a href="cart_script.php?product_id=<?php echo $row['product_id']; ?>.php">
+          <a href="cart_script.php?product_id=<?php echo $row['product_id']; ?>">
             <button class="btn btn-success" type="button">add to cart</button>
           </a>
         <?php }else{ ?>
-          <a href="cart_script.php?product_id=<?php echo $row['product_id']; ?>.php">
+          <a href="cart_script.php?product_id=<?php echo $row['product_id']; ?>">
             <button class="btn btn-success" type="button" disabled>add to cart</button>
           </a>
           <p class="text-danger">Please log in first</p>
