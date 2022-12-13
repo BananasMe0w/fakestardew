@@ -49,7 +49,7 @@
           <td></td>
           <td></td>
           <td></td>
-          <td>Total: <?php echo $total ?></td>
+          <td>Total: <?php echo number_format($total); ?></td>
         </tr>
       </tbody>
       </table>
